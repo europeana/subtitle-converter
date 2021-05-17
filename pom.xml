@@ -1,0 +1,107 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.dotsub.converter</groupId>
+    <artifactId>subtitle-converter</artifactId>
+    <version>1</version>
+    <packaging>jar</packaging>
+
+    <name>Linked Data EDM</name>
+    <url>http://www.europeanalabs.eu</url>
+
+    <organization>
+        <url>http://www.europeanalabs.eu</url>
+        <name>Europeana Foundation</name>
+    </organization>
+
+    <licenses>
+        <license>
+            <name>EUPL</name>
+            <url>http://joinup.ec.europa.eu/software/page/eupl</url>
+            <comments>
+Copyright 2007-2012 The Europeana Foundation Licenced under the EUPL, 
+Version 1.1 (the "Licence") and subsequent versions as approved by the European 
+Commission; You may not use this work except in compliance with the Licence. 
+You may obtain a copy of the Licence at: http://joinup.ec.europa.eu/software/page/eupl 
+Unless required by applicable law or agreed to in writing, software distributed 
+under the Licence is distributed on an "AS IS" basis, without warranties 
+or conditions of any kind, either express or implied. See the Licence for 
+the specific language governing permissions and limitations under the Licence.
+            </comments>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>hmanguinhas</id>
+            <name>Hugo Manguinhas</name>
+            <email>hugo.manguinhas@europeana.eu</email>
+        </developer>
+    </developers>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.5.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.4</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+            <version>1.2</version>
+        </dependency>
+        <dependency>
+            <groupId>dom4j</groupId>
+            <artifactId>dom4j</artifactId>
+            <version>1.6.1</version>
+        </dependency>
+        <dependency>
+            <groupId>jaxen</groupId>
+            <artifactId>jaxen</artifactId>
+            <version>1.1.6</version>
+        </dependency>
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+            <version>2.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.velocity</groupId>
+            <artifactId>velocity</artifactId>
+            <version>1.7</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.findbugs</groupId>
+            <artifactId>annotations</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+        </dependency>
+    </dependencies>
+
+</project>
